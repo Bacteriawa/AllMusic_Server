@@ -9,7 +9,7 @@
 ![](https://img.shields.io/github/actions/workflow/status/Coloryr/AllMusic_Server/gradle.yml?style=for-the-badge)
 ![](https://img.shields.io/github/license/Coloryr/AllMusic_Server?style=for-the-badge)
 
-</div>
+</div>1
 
 
 
