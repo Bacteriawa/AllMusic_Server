@@ -177,7 +177,9 @@ public class SideFolia extends BaseSide {
     @Override
     public boolean onMusicAdd(Object obj, MusicObj music) {
         MusicAddEvent event = new MusicAddEvent(music, (CommandSender) obj);
-        Bukkit.getPluginManager().callEvent(event);
+        Bukkit.getGlobalRegionScheduler().run(AllMusicFolia.plugin, (scheduledTask) -> {
+            Bukkit.getPluginManager().callEvent(event);
+        });
         return event.isCancelled();
     }
 
